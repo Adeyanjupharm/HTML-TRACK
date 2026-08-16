@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example — Accessible Contact Form</title>
+  <meta name="description" content="A worked example of an accessible, labeled contact form for the Hey_Techys Block 2 challenges.">
+</head>
+<body>
+  <!--
+    This is a worked example showing the standard expected for Block 2
+    (forms/accessibility) issues. Every input has a matching label,
+    native validation is used, and the form is fully keyboard-navigable.
+  -->
+  <main>
+    <h1>Contact Me</h1>
+
+    <form action="/submit" method="POST">
+      <div>
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required minlength="2">
+      </div>
+
+      <div>
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+</body>
+</html>
